@@ -1,0 +1,29 @@
+.upper_box {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.reset {
+  display: flex;
+  justify-content: center;
+  button {
+    cursor: pointer;
+    transition: 0.4s;
+    width: 120px;
+    height: 30px;
+    border: 1px solid navajowhite;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 25px;
+    font-size: 17px;
+
+    font-weight: 500;
+    background-color: #f72585;
+    color: #f1faee;
+    &:hover {
+      background-color: #f1faee;
+      color: #9a031e;
+      box-shadow: 0 0 6px 2px#f72585;
+    }
+  }
+}
