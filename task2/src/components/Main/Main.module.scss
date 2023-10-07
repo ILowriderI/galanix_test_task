@@ -1,0 +1,42 @@
+.container {
+  .info {
+    margin: 20px auto;
+    div {
+      text-align: center;
+    }
+  }
+  .images_container {
+    margin: 5px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    > div:nth-child(4n + 1) img {
+      border: 5px solid #d80032;
+      &:hover {
+        border: 5px solid yellow;
+      }
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+      > div:nth-child(2n + 1) img {
+        border: 5px solid #d80032;
+        &:hover {
+          border: 5px solid yellow;
+        }
+      }
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+      > div:nth-child(1n + 1) img {
+        border: 5px solid #d80032;
+        &:hover {
+          border: 5px solid yellow;
+        }
+      }
+    }
+  }
+}
